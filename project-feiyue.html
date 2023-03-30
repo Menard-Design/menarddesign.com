@@ -16,7 +16,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
         <!-- START: Styles -->
         <!-- Swiper -->
-        <link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.min.css" />
+        <!--    <link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.min.css" />-->
+        <!-- Splide -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide-core.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/themes/splide-default.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.3.20/dist/js/splide-extension-grid.min.js"></script>
         <!-- Fancybox -->
         <link rel="stylesheet" href="assets/vendor/fancybox/dist/jquery.fancybox.min.css" />
         <!-- Styles -->
@@ -45,6 +51,14 @@
             gtag('js', new Date());
             gtag('config', 'G-W8EHJHW1C8');
         </script>
+        <style>
+            .splide__slide {
+                text-align: center;
+                margin: 0 30px;
+                display: flex;
+                align-items: center;
+            }
+        </style>
     </head>
     <body>
         <header class="navbar navbar-top navbar-expand">
@@ -260,7 +274,7 @@
         <!-- ImagesLoaded -->
         <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
         <!-- Swiper -->
-        <script src="assets/vendor/swiper/dist/js/swiper.min.js"></script>
+        <!--<script src="assets/vendor/swiper/dist/js/swiper.min.js"></script>-->
         <!-- Animejs -->
         <script src="assets/vendor/animejs/lib/anime.min.js"></script>
         <!-- Rellax -->

@@ -16,7 +16,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
         <!-- START: Styles -->
         <!-- Swiper -->
-        <link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.min.css" />
+        <!--    <link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.min.css" />-->
+        <!-- Splide -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide-core.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/themes/splide-default.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.3.20/dist/js/splide-extension-grid.min.js"></script>
         <!-- Fancybox -->
         <link rel="stylesheet" href="assets/vendor/fancybox/dist/jquery.fancybox.min.css" />
         <!-- Styles -->
@@ -45,6 +51,14 @@
             gtag('js', new Date());
             gtag('config', 'G-W8EHJHW1C8');
         </script>
+        <style>
+            .splide__slide {
+                text-align: center;
+                margin: 0 30px;
+                display: flex;
+                align-items: center;
+            }
+        </style>
     </head>
     <body>
         <header class="navbar navbar-top navbar-expand navbar-dark navbar-fixed">
@@ -232,7 +246,7 @@
                     <div class="row justify-content-xl-center gh-1 gv-5 mb-n7">
                         <div class="col-12 col-lg-4 mr-lg-auto mr-xl-0 show-on-scroll" data-show-duration="900">
                             <div class="subtitle mt-n10">who we are</div>
-                            <h2 class="h3">We've worked with amazing brands</h2>
+                            <h2 class="h3">We work with amazing brands</h2>
                         </div>
                         <div class="d-none d-xl-block col-1"></div>
                         <div id="home-about" class="col-12 col-lg-6 col-xl-5 show-on-scroll" data-show-delay="150" data-show-duration="900">
@@ -242,26 +256,83 @@
                             <hr>
                         </div>
                     </div>
-                    <div class="pt-30 mt-n10 mb-60 mb-sm-0">
-                        <div class="row align-items-center justify-content-between text-center gh-1 gv-3">
-                            <div class="col-6 col-sm-2 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
-                                <img class="img-fluid" src="assets/images/brand-jr-watkins.png" alt="J.R. Watkins">
-                            </div>
-                            <div class="col-6 col-sm-2 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
-                                <img class="img-fluid" src="assets/images/bridges-logo.png" alt="Bridges CHC">
-                            </div>
-                            <div class="col-6 col-sm-2 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
-                                <img class="img-fluid" src="assets/images/brand-heelys.png" alt="Heelys">
-                            </div>
-                            <div class="col-6 col-sm-2 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
-                                <img class="img-fluid" src="assets/images/brand-feiyue.png" alt="Feiyue">
-                            </div>
-                            <div class="col-6 col-sm-2 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
-                                <img class="img-fluid" src="assets/images/brand-straye.webp" alt="STRAYE">
-                            </div>
-                        </div>
-                    </div>
+                    <!--<div class="pt-30 mt-n10 mb-60 mb-sm-0">
+            <div class="row align-items-center justify-content-between text-center gh-1 gv-3">
+                <div class="col-6 col-sm-3 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
+                    <img class="img-fluid" src="assets/images/brand-albolene.svg" alt="Albolene">
                 </div>
+                <div class="col-6 col-sm-3 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
+                    <img class="img-fluid" src="assets/images/brand-cystex.svg" alt="Cystex" style="max-width: 200px;">
+                </div>
+                <div class="col-6 col-sm-3 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
+                    <img class="img-fluid" src="assets/images/brand-thermacare.svg" alt="ThermaCare">
+                </div>
+                <div class="col-6 col-sm-3 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
+                    <img class="img-fluid" src="assets/images/brand-certain-dri.svg" alt="Certain Dri" style="max-height: 120px;">
+                </div>
+                <div class="col-6 col-sm-4 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
+                    <img class="img-fluid" src="assets/images/brand-jr-watkins.png" alt="J.R. Watkins" style="max-width: 200px;">
+                </div>
+                <div class="col-6 col-sm-4 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
+                    <img class="img-fluid" src="assets/images/brand-heelys.png" alt="Heelys">
+                </div>
+                <div class="col-6 col-sm-4 show-on-scroll" data-show-delay="" data-show-duration="300" data-show-distance="20">
+                    <img class="img-fluid" src="assets/images/brand-feiyue.png" alt="Feiyue">
+                </div>
+            </div>
+        </div>-->
+                </div>
+                <section class="splide row pt-30 mt-n10 mb-60 mb-sm-0" aria-label="Menard Design Clients">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img class="img-fluid" src="assets/images/brand-albolene.svg" alt="Albolene">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="img-fluid" src="assets/images/brand-cystex.svg" alt="Cystex" style="max-width: 200px;">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="img-fluid" src="assets/images/brand-thermacare.svg" alt="ThermaCare">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="img-fluid" src="assets/images/brand-certain-dri.svg" alt="Certain Dri" style="max-height: 120px;">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="img-fluid" src="assets/images/brand-jr-watkins.png" alt="J.R. Watkins" style="max-width: 200px;">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="img-fluid" src="assets/images/brand-heelys.png" alt="Heelys">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="img-fluid" src="assets/images/brand-feiyue.png" alt="Feiyue">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <script>
+                    var splide = new Splide('.splide',
+                    {
+                        type: 'loop',
+                        height: '10rem',
+                        focus: 'center',
+                        arrows: false,
+                        pagination: false,
+                        perPage: 4,
+                        breakpoints:
+                        {
+                            640:
+                            {
+                                perPage: 2,
+                            },
+                        },
+                        autoWidth: true,
+                        autoScroll:
+                        {
+                            speed: 1,
+                        },
+                    }).mount(window.splide.Extensions);
+                    //splide.mount(window.splide.Extensions);
+                </script>
             </div>
         </div>
         <footer class="footer bg-dark text-white shape-parent overflow-hidden py-130">
@@ -333,7 +404,7 @@
         <!-- ImagesLoaded -->
         <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
         <!-- Swiper -->
-        <script src="assets/vendor/swiper/dist/js/swiper.min.js"></script>
+        <!--<script src="assets/vendor/swiper/dist/js/swiper.min.js"></script>-->
         <!-- Animejs -->
         <script src="assets/vendor/animejs/lib/anime.min.js"></script>
         <!-- Rellax -->
